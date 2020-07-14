@@ -16,8 +16,6 @@ def removeHTML(filename):           #function removes html and other noise from 
     del transcript[2]                                                   #removed lines from 
     del transcript[-1]                                                  #fixed positions
     transcript = [i for i in transcript if i]           #removes empty indices from list
-    for i in range(len(transcript)):
-        print(transcript[i])
     return transcript
 
 def getGenEds(filename):
