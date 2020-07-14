@@ -10,7 +10,7 @@ def getfile():      #gets file from OS dialog
 
 def writeToWindow(text):
     scroll=tk.Scrollbar(root)
-    textspace=tk.Text(root, height=40, width=100)
+    textspace=tk.Text(root, height=40, width=110)
     scroll.pack(side=tk.RIGHT, fill=tk.Y)
     textspace.pack(side=tk.LEFT, fill=tk.Y)
     scroll.config(command=textspace.yview)
