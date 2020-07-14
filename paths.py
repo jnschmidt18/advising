@@ -69,7 +69,7 @@ def validateEcon(filename):
                 remMath-=1
     if(remEcon>0 or remMath>0):                     #if not both of the requirements are met, quantitative is not complete
         quantComplete= False
-        returnString+=('Student needs to take ' + str(remEcon) + ' more economics courses and ' + str(remMath) + ' more math courses for the quantitative track\n')
+        returnString+=('Student needs to take ' + str(remEcon) + ' additional economics courses and ' + str(remMath) + ' more math courses for the quantitative track\n')
     if(not(regComplete or quantComplete)):          #if neither the regular nor the quantitative tracks are met, then not complete
         complete= False
     if(complete):
